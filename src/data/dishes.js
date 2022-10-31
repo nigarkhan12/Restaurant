@@ -13,7 +13,11 @@ const DISHES = [
         id: 0,
         rating: 5,
         comment: "Imagine all the eatables, living in conFusion!",
+<<<<<<< HEAD
         author: "MASA",
+=======
+        author: "Shanto",
+>>>>>>> 5dc0410d39e434673ea7f9cf31dcce6e9e1e0b7e
         date: "2018-10-16T17:57:28.556094Z",
       },
       {
@@ -61,7 +65,11 @@ const DISHES = [
         id: 0,
         rating: 5,
         comment: "Imagine all the eatables, living in conFusion!",
+<<<<<<< HEAD
         author: "MASA",
+=======
+        author: "Shanto",
+>>>>>>> 5dc0410d39e434673ea7f9cf31dcce6e9e1e0b7e
         date: "2018-10-16T17:57:28.556094Z",
       },
       {
@@ -109,7 +117,11 @@ const DISHES = [
         id: 0,
         rating: 5,
         comment: "Imagine all the eatables, living in conFusion!",
+<<<<<<< HEAD
         author: "MASA",
+=======
+        author: "Shanto",
+>>>>>>> 5dc0410d39e434673ea7f9cf31dcce6e9e1e0b7e
         date: "2018-10-16T17:57:28.556094Z",
       },
       {
@@ -157,7 +169,11 @@ const DISHES = [
         id: 0,
         rating: 5,
         comment: "Imagine all the eatables, living in conFusion!",
+<<<<<<< HEAD
         author: "MASA",
+=======
+        author: "Shanto",
+>>>>>>> 5dc0410d39e434673ea7f9cf31dcce6e9e1e0b7e
         date: "2018-10-16T17:57:28.556094Z",
       },
       {
