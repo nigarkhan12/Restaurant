@@ -3,21 +3,21 @@ import { Table } from "react-bootstrap";
 import dateFormat from "dateformat";
 
 const DishComment = (props) => {
-  return props.comments.map((comment) => {
+  return props.comments?.map((comment) => {
     return (
       <div>
-        <Table striped bordered hover variant="dark">
+        <Table striped bordered hover>
           <thead>
             <tr>
               <th>id</th>
-              <th>Comment</th>
-              <th>Author</th>
-              <th>Date</th>
+              <th>comment</th>
+              <th>author</th>
+              <th>date</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>key={comment.id}</td>
+              <td> {comment.id}</td>
               <td>{comment.comment}</td>
               <td>{comment.author}</td>
               <td>

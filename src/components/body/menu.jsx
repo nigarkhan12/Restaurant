@@ -8,6 +8,7 @@ export class Menu extends Component {
     dishes: DISHES,
     selectedDish: null,
   };
+
   onDishSelect = (dish) => {
     this.setState({ selectedDish: dish });
   };
