@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container, Row, Button, Modal } from "react-bootstrap";
 import DISHES from "../../data/dishes";
 import DishDetail from "./dishDetail";
 import MenuItem from "./menuItem.jsx";
@@ -7,10 +8,19 @@ export class Menu extends Component {
   state = {
     dishes: DISHES,
     selectedDish: null,
+    show: false,
+  };
+
+  modalClose = () => {
+    this.setState({ show: false });
+  };
+
+  modalOpen = () => {
+    this.setState({ show: true });
   };
 
   onDishSelect = (dish) => {
-    this.setState({ selectedDish: dish });
+    this.setState({ selectedDish: dish, show: !this.state.show });
   };
 
   render() {
@@ -29,12 +39,20 @@ export class Menu extends Component {
       dishDetail = <DishDetail dish={this.state.selectedDish} />;
     }
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-6">{menu}</div>
-          <div className="col-6">{dishDetail}</div>
-        </div>
-      </div>
+      <Container fluid={true}>
+        <Row lg={3} md={3} sm={6} xs={6}>
+          {menu}
+        </Row>
+
+        <Modal show={this.state.show} onHide={this.modalClose} size="lg">
+          <Modal.Body>{dishDetail}</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.modalClose}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </Container>
     );
   }
 }
