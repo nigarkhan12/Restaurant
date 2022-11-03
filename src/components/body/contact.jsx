@@ -37,6 +37,7 @@ export class contact extends Component {
   };
 
   render() {
+    document.title = "Contact";
     return (
       <div>
         <Fragment>

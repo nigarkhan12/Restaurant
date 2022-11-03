@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Container } from "react-bootstrap";
 
 const About = () => {
+  document.title = "About";
   return (
     <div>
       <Fragment>
